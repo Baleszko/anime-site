@@ -1,23 +1,36 @@
 .header {
-  margin: 1rem 2rem 4rem 2rem;
-  height: 6rem;
+  margin: 1rem 2rem 1rem 2rem;
+  height: 7rem;
   min-width: 25rem;
   /* From https://css.glass */
-  background: var(--main-design-color);
 
+  background: #ff8d3ce4;
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(3.7px);
+  -webkit-backdrop-filter: blur(3.7px);
+  border: 1px solid #ff8d3ce4;
+
+  /* background: var(--main-design-color); */
   border-radius: 1rem;
-  /*position: -webkit-sticky;
+  position: -webkit-sticky;
   position: sticky;
   top: 1rem;
-  */
+
   grid-column: 1 / span 2;
-  /* grid-column-end: 3; */
   display: flex;
   align-items: center;
+  z-index: 1;
 }
 
 .link {
   font-size: 1.953rem;
   font-weight: 600;
   padding: 1rem;
+  margin-left: 1rem;
+}
+
+.link:hover {
+  border-radius: 1rem;
+  box-shadow: 0 0 0.4rem 0.3rem rgba(0, 0, 0, 0.094);
 }
